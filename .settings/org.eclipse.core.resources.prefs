@@ -1,3 +1,5 @@
 eclipse.preferences.version=1
+encoding//src/config/Config.java=UTF-8
+encoding//src/ga/GA.java=UTF-8
 encoding//src/manufacturer/Manufacturer.java=UTF-8
 encoding//src/retailer/Retailer.java=UTF-8

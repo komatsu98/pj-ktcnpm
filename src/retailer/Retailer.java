@@ -30,6 +30,19 @@ public class Retailer {
 	public double theta;
 	public double b;
 
+	public Retailer(double e_a, double K, double phi, double uc, double cp, double H_b, double L_b, double S_b, double p, double a, double theta, double b) {
+		this.e_a = e_a;
+		this.K = K;
+		this.phi = phi;
+		this.uc = uc;
+		this.cp = cp;
+		this.H_b = H_b;
+		this.L_b = L_b;
+		this.S_b = S_b;
+		this.p = p;
+		this.a = a;
+	}
+	
 	public static void main(String args[]) {
         System.out.println("Retailer");
     }
@@ -46,5 +59,9 @@ public class Retailer {
 	public double calculator_retailer_profit(double A, double e_A) {
 		double NP_bi = this.calculator_demand(A, e_A) * (this.p - this.cp - this.uc - this.phi) - this.a;
         return NP_bi;
+	}
+	
+	public void calculator_b() {
+		this.b = this.H_b / (this.H_b + this.L_b);
 	}
 }
