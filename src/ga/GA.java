@@ -22,6 +22,8 @@ public class GA {
 	
 	public GA(int n) {
 		this.n = n;
+		this.profit_list = new ArrayList<Double>();
+		this.manufacturer_list = new ArrayList<Manufacturer>();
 		for(int i = 0; i < n; i ++) {
 			this.profit_list.add(0.0);
 		}
@@ -177,7 +179,7 @@ public class GA {
 	public void show() {
 		ArrayList<Double> temp = new ArrayList<>(profit_list);
 		Collections.sort(temp);
-        double best = temp.get(-1);
+        double best = temp.get(temp.size()-1);
         System.out.println(best);
 		for(int i = 0; i < this.n; i ++) {
 			if (this.profit_list.get(i) == best) {

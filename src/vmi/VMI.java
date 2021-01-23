@@ -10,6 +10,7 @@ public class VMI {
 		Config config = new Config();
 		GA ga = new GA(1000);
 		for (int i = 0; i < 10; i++) {
+			ga.create();
 		    ga.evaluation();
 		    ga.selection();
 		    ga.selection();

@@ -49,6 +49,7 @@ public class Manufacturer {
 		this.C = C;
 		this.n = n;
 		this.x = x;
+		this.retailer_list = new ArrayList<Retailer>();
 	}
 	
 	public static void main(String args[]) {
